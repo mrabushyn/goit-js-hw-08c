@@ -16,8 +16,15 @@
   "bugs": {
     "url": "https://github.com/mrabushyn/goit-js-hw-08c/issues"
   },
-  "homepage": "https://github.com/mrabushyn/goit-js-hw-08c#readme",
+  "dependencies": {
+    "modern-normalize": "^1.1.0"
+  },
   "devDependencies": {
-    "parcel-bundler": "^1.12.5"
-  }
+    "parcel-bundler": "^1.12.5",
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
 }
