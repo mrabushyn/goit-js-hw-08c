@@ -31,3 +31,4 @@ function largePicture(e) {
 
   gallery.on('show.simplelightbox');
 }
+console.log(localStorage);
