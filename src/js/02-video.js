@@ -3,13 +3,13 @@ import Player from '@vimeo/player';
 const iframe = document.querySelector('iframe');
 const player = new Player(iframe);
 
-const playedTime = 'videoplayer-current-time';
+const PLAYED_TIME = 'videoplayer-current-time';
 
 const onPlay = function (data) {
-  localStorage.setItem(playedTime, data.seconds);
+  localStorage.setItem(PLAYED_TIME, data.seconds);
   console.log(data.seconds)
 };
-const currentTime = localStorage.getItem(playedTime);
+const currentTime = localStorage.getItem(PLAYED_TIME);
 
 player.on('timeupdate', throttle(onPlay, 1000));
 
